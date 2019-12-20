@@ -1,0 +1,13 @@
+[package]
+name = "jirash"
+version = "0.1.0"
+authors = ["Sumeet Padavala <spadavala@atlassian.com>"]
+edition = "2018"
+
+[dependencies]
+clap = {version = "2.33", features = ["yaml"]}
+rustyline = "5.0.5"
+serde = { version = "1.0.104", features = ["derive"] }
+serde_yaml = "0.8"
+lib_jsh = { path =  "./src/lib_jsh" }
+confy = "0.3.1"
